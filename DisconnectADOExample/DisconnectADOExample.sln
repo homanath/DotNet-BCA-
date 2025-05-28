@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35825.156 d17.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DisconnectADOExample", "DisconnectADOExample\DisconnectADOExample.csproj", "{BCE8A006-5DF6-4DE7-BCBB-493A9674BFD3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BCE8A006-5DF6-4DE7-BCBB-493A9674BFD3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BCE8A006-5DF6-4DE7-BCBB-493A9674BFD3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BCE8A006-5DF6-4DE7-BCBB-493A9674BFD3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BCE8A006-5DF6-4DE7-BCBB-493A9674BFD3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {846A3C66-0481-4E1D-82C5-25C9B34C5596}
+	EndGlobalSection
+EndGlobal

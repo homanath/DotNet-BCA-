@@ -1,0 +1,43 @@
+﻿@using TestWebApp.Models
+
+@{
+	Layout = "_Layout";
+    ViewData["Title"] = "Index";
+
+}
+
+<h1>List of Students:</h1>
+<table>
+    <thread>
+        <tr>
+			<th>Id</th>
+			<th>Name</th>
+			<th>Address</th>
+            <th>Join Date</th>
+        </tr>
+    </thread>
+    <tbody>
+		@for (int i = 0; i < Model.Count; i++)
+		{
+			<tr>
+				<td>
+					@Model[i].Id
+				</td>
+				<td>
+					@Model[i].Name
+				</td>
+				<td>
+					@Model[i].Address
+				</td>
+				<td>
+					@Model[i].JoinDate.ToShortDateString()
+				</td>
+			</tr>
+		}
+	</tbody>
+
+		})
+</table>
+
+<button class="btn btn-primary">Click Me</button>
+
