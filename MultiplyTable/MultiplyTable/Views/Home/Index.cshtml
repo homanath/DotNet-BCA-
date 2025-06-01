@@ -1,0 +1,37 @@
+﻿@model int
+@addTagHelper *,Microsoft.AspNetCore.Mvc.TagHelpers
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		MUltiplication Table of @Model
+	</title>
+</head>
+<body>
+	<form map-controller="Home" asp-action="Index">
+		<label asp-for="@Model">Enter a number:</label><br />
+		<input type="text" asp-for="@Model" name="num"><br />
+		<input type="submit"  value="Generate" />
+	</form><br />
+	<table>
+		<thead>
+			<tr>
+				<td>Number</td>
+				<td>Times</td>
+				<td>Results</td>
+			</tr>
+		</thead>
+		<tbody>
+			@for (int i=1; i<=10; i++)
+			{
+				<tr>
+					<td>@Model</td>
+					<td>@i</td>
+					<td>@(Model*i)</td>
+				</tr>
+			}
+		</tbody>
+</table>
+		
+	</body>
+</html>

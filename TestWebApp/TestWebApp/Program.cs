@@ -8,8 +8,9 @@ namespace TestWebApp
             builder.Services.AddControllersWithViews();
             var app = builder.Build();
             app.UseStaticFiles();
-            //www.abc.com/home/index
-            app.MapDefaultControllerRoute();
+            //localhost:port/home/index
+            // app.MapDefaultControllerRoute();
+            app.MapControllerRoute(name = "myRoute", pattern: "{controller=Home}/{action=index}/{id}");
 
             app.Run();
         }
